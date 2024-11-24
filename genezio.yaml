@@ -2,17 +2,12 @@ backend:
     functions:
         - entry: index.js
           handler: handler
-          name: function-other
+          name: function-express
           path: .
-          type: other
+          type: express
     language:
         name: js
-    path: .
-    scripts:
-        deploy:
-            - npm install
-        local:
-            - npm install
-name: nodejs-argo
+    path: ./
+name: Servers
 region: us-east-1
 yamlVersion: 2
